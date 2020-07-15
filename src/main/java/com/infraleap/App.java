@@ -15,18 +15,6 @@ public class App {
             usage();
         }
 
-        //String imagePath = "/Users/ehaase/Desktop/output.i64";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/Coffee_1-620x350.jpg";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/coffee.i64";
-        //String imagePath = "/Users/ehaase/Desktop/foo.i64";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/CircleW.bmp";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/pic.i64";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/GMARBLES.PCX";
-        //String imagePath = "/Users/ehaase/Desktop/bmp2dict/DEVTEAM.PCX";
-
-        //String outPath = "/Users/ehaase/Desktop/output.png";
-        //String outPath = "/Users/ehaase/Desktop/output.i64";
-
         String imagePath = args[0];
 
         BufferedImage myPicture = ImageIO.read(new File(imagePath));
