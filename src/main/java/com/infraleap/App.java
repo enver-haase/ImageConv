@@ -33,10 +33,18 @@ public class App {
 
         BufferedImage myPicture = ImageIO.read(new File(imagePath));
 
+        String formatName = "i64";
         if (args.length == 2) {
             String outPath = args[1];
+            int length = outPath.length();
+            if (length > 4 && outPath.charAt(length-4) == '.'){
+                formatName = outPath.substring(length-3);
+            }
+            else{
+                outPath += ".i64";
+            }
             File outputFile = new File(outPath);
-            ImageIO.write(myPicture, "i64", outputFile);
+            ImageIO.write(myPicture, formatName, outputFile);
         }
         else {
             //drawCrap(myPicture);
