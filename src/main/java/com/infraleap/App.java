@@ -7,8 +7,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import static com.twelvemonkeys.image.ImageUtil.toBuffered;
-
 public class App {
 
     public static void main(String[] args) throws IOException {
